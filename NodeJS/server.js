@@ -23,6 +23,10 @@ http.createServer(function(req, res){
 		// 3600 Seconds Per hour
 		// 60 Minutes per Hour
 		// 24 Hours per Day
+		
+		// “Displaying System Uptime (SystemInformation Nodejs).” Reddit, www.reddit.com/r/discordbots/comments/jgntsp/displaying_system_uptime_systeminformation_nodejs/. 
+		// Adjusted the math a bit and nested it within a function to call upon to display to website.
+		
         function formatUptime(uptimeInSeconds) {
 			// Calculates Days (Uptime in seconds/(3600 * 24) to get days
             const days = Math.floor(uptimeInSeconds / (3600 * 24));
