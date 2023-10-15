@@ -6,7 +6,8 @@ C:\>python -m venv /venv/numpy
 ```
 ```Powershell
 Powershell
-PS C:\>  /venv/numpy/Scripts/activate.ps1 
+PS C:\>  /venv/numpy/Scripts/activate.ps1
+(numpy) PS C:\>
 ```
 Once Activated goto Python
 ```python
