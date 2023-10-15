@@ -3,6 +3,8 @@ This is how you can run a Python script that I created, which uses a plugin call
 First let's create a Virtual ENV called scripts. You can call it whatever you want
 ```python
 C:\>python -m venv /venv/numpy
+```
+```Powershell
 Powershell
 PS C:\>  /venv/numpy/Scripts/activate.ps1 
 ```
