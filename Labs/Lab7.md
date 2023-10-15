@@ -4,6 +4,7 @@ First let's create a Virtual ENV called scripts. You can call it whatever you wa
 ```python
 C:\>python -m venv /venv/numpy
 ```
+We then will use PowerShell to activate.
 ```Powershell
 Powershell
 PS C:\>  /venv/numpy/Scripts/activate.ps1
