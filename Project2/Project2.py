@@ -87,30 +87,20 @@ while bj == True:
             dealer_hand.append(deck[0])
             dealer_total = calculate_total(dealer_hand)
             deck = deck[1:]   
-
+            print("Dealer's Hand:", [card.tolist() for card in dealer_hand], "Total:", dealer_total)
 
 
 
     # Determine the outcome of the game and print hands
     if player_total > 21:
-            print("Players's Hand:", [card.tolist() for card in player_hand], "Total:", player_total)
-            print("Dealer's Hand:", [card.tolist() for card in dealer_hand], "Total:", dealer_total)
             print("Player busts. Dealer wins!")
     elif dealer_total > 21:
-            print("Players's Hand:", [card.tolist() for card in player_hand], "Total:", player_total)
-            print("Dealer's Hand:", [card.tolist() for card in dealer_hand], "Total:", dealer_total)
             print("Dealer busts. Player wins!")
     elif player_total == dealer_total:
-            print("Players's Hand:", [card.tolist() for card in player_hand], "Total:", player_total)
-            print("Dealer's Hand:", [card.tolist() for card in dealer_hand], "Total:", dealer_total)
             print("It's a push. The game is tied.")
     elif player_total > dealer_total:
-            print("Players's Hand:", [card.tolist() for card in player_hand], "Total:", player_total)
-            print("Dealer's Hand:", [card.tolist() for card in dealer_hand], "Total:", dealer_total)
             print("Player wins!")
     else:
-            print("Players's Hand:", [card.tolist() for card in player_hand], "Total:", player_total)
-            print("Dealer's Hand:", [card.tolist() for card in dealer_hand], "Total:", dealer_total)
             print("Dealer wins.")
 
 
