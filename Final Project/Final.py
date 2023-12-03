@@ -97,6 +97,7 @@ def blackjack_game():
         print("Player's Hand:", [card.tolist() for card in player_hand], "Total:", player_total)
         print("Dealer's Hand:", [card.tolist() for card in dealer_hand], "Total:", dealer_total)
 
+#Will prompt the player to correctly guess the count
         while True:
             try:
                 player_count = int(input("What's the current count? "))
