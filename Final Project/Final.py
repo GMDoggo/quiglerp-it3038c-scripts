@@ -36,6 +36,7 @@ def blackjack_game():
         if cards_remaining < 5:  # You can adjust this value to define when to reshuffle
             print("Deck is being reshuffled...")
             cards_remaining = 52
+            count = 0
         print("Remaining cards:", cards_remaining)
 
         deck = create_deck()
@@ -111,7 +112,7 @@ def blackjack_game():
 
 
 
-
+    # While either the dealer or player has less than 21 prompt user to hit or stand
         while player_total <= 21 and dealer_total <= 21:
             decision = input("Do you want to hit (H) or stand (S)? ").upper()
             # Deal the player an additional card if they Hit
